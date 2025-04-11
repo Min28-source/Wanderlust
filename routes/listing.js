@@ -25,6 +25,6 @@ router.route('/:id')
 
 router.route('/:id/edit')
     .get(isLoggedin, wrapAsync(listingsController.editListingPage))
-    .put(isOwner, isLoggedin, validateListing, wrapAsync(listingsController.saveEditData));
+    .put(isOwner, isLoggedin, validateListing, upload.single('image'),wrapAsync(listingsController.saveEditData));
 
 module.exports = router;
