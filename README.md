@@ -88,25 +88,25 @@ Visit: http://localhost:8080
 
 ```
 
-🗃️ Folder Structure
+### 🗃️ Folder Structure
 
-📦airbnb-clone
- ┣ 📂models
- ┣ 📂routes
- ┣ 📂public
- ┣ 📂views
- ┣ 📂middleware
- ┣ app.js
- ┗ README.md
+#### 📦airbnb-clone
+ #### ┣ 📂models
+ #### ┣ 📂routes
+ #### ┣ 📂public
+ #### ┣ 📂views
+ #### ┣ 📂middleware
+ #### ┣ app.js
+ #### ┗ README.md
 
-🙋‍♀️ Author
-Min28-source
+### 🙋‍♀️ Author
+#### Min28-source
 
-💡 Acknowledgements
-Shraddha Khapra for the amazing Web Development Course
+### 💡 Acknowledgements
+#### Shraddha Khapra for the amazing Web Development Course
 
-Maptiler
+#### Maptiler
 
-Cloudinary
+### Cloudinary
 
 ---
