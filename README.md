@@ -99,14 +99,18 @@ Visit: http://localhost:8080
  #### ┣ app.js
  #### ┗ README.md
 
+
+---
 ### 🙋‍♀️ Author
 #### Min28-source
 
+
+---
 ### 💡 Acknowledgements
 #### Shraddha Khapra for the amazing Web Development Course
 
 #### Maptiler
 
-### Cloudinary
+#### Cloudinary
 
 ---
