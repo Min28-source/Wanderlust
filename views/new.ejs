@@ -1,0 +1,113 @@
+<% layout("layouts/boilerplate") %>
+<div class="row">
+  <div class="col-8 offset-2">
+    <h3>Create new listing</h3>
+    <br />
+    <form
+      method="POST"
+      action="/listings"
+      class="needs-validation"
+      novalidate
+      enctype="multipart/form-data"
+    >
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          id="title"
+          type="text"
+          name="listing[title]"
+          placeholder="Enter title"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Looks Good!</div>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea
+          id="description"
+          class="form-control"
+          name="listing[description]"
+          placeholder="Enter description"
+          required
+        ></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Image Link</label>
+        <input
+          id="image"
+          class="form-control"
+          type="file"
+          name="listing[image]"
+          placeholder="Enter the image URL/Link"
+        />
+      </div>
+      <div class="row">
+        <div class="mb-3 col-md-4 col-12">
+          <label for="price" class="form-label">Price</label>
+          <input
+            id="price"
+            class="form-control"
+            type="number"
+            name="listing[price]"
+            placeholder="Enter price"
+            required
+          />
+          <div class="invalid-feedback">
+            Please enter a valid price, please.
+          </div>
+        </div>
+        <div class="mb-3 col-md-8 col-12">
+          <label for="location" class="form-label">Location</label>
+          <input
+            id="location"
+            class="form-control"
+            type="text"
+            name="listing[location]"
+            placeholder="Enter location"
+            required
+          />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input
+          id="country"
+          type="text"
+          name="listing[country]"
+          placeholder="Enter country"
+          class="form-control"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-dark add-btn">Add</button>
+      <br /><br />
+    </form>
+  </div>
+</div>
+
+<script>
+  (function () {
+    "use strict";
+    window.addEventListener(
+      "load",
+      function () {
+        var forms = document.getElementsByClassName("needs-validation");
+        Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      },
+      false
+    );
+  })();
+</script>
