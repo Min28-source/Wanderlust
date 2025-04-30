@@ -1,6 +1,6 @@
-# 🏕️ Wanderlust (Inspired by Apna College)
+# 🏕️ Wanderlust
 
-A full-stack web application inspired by Airbnb, where users can create, edit, delete, and review campgrounds 🏕️. Built as part of [Shraddha Khapra's Sigma 3. 0 Course](https://www.apnacollege.in/course/sigma-3).
+A full-stack web application inspired by Airbnb, where users can create, edit, delete, and review campgrounds 🏕️. 
 
 ---
 ## Deployed Here
@@ -110,7 +110,7 @@ Visit: http://localhost:8080
 
 ---
 ### 💡 Acknowledgements
-#### Shraddha Khapra for the amazing Web Development Course
+#### Render for the amazing deployment service 
 
 #### Maptiler
 
